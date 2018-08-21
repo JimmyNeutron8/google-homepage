@@ -1,7 +1,7 @@
 html, body {
     margin: 0px;
     padding: 0px;
-    font-size: 14px;
+    font-size: 13px;
     font-family: Arial, sans-serif;
     font-weight: lighter;
 }
@@ -14,11 +14,13 @@ html, body {
 #search-field {
     display: block;
     margin: 5vh auto;
-    width: 500px;
-    height: 40px;
+    width: 480px;
+    height: 20px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
     border: 1px solid lightgray;
     border: none;
+    padding: 10px;
+    font-size: 16px;
 }
 
 nav {
@@ -26,14 +28,31 @@ nav {
     top: 0px;
     left: 0px;
     width: 100vw;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav a {
-    display: inline-block;
-    vertical-align: middle;
+nav .nav-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto 15px;
+}
+
+.nav-div a {
     text-decoration: none;
-    padding: 1.5%;
+    padding: 10px;
     color: #666;
+    margin: 0px;
+}
+
+.nav-div a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -57,10 +76,34 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin: auto 20px;
 }
 
 .footer-div a {
     text-decoration: none;
     padding: 15px;
     color: #666;
+    margin: 0px;
+}
+
+.footer-div a:hover {
+    text-decoration: underline;
+}
+
+#buttons-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button {
+    border: none;
+    background: #eee;
+    color: #666;
+    height: 32px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 13px;
+    margin: auto 5px;
 }

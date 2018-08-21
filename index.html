@@ -10,14 +10,28 @@
 </head>
 <body>
     <nav>
-        <a href="">About</a>
-        <a href="">Store</a>
+        <div class="nav-div">
+            <a href="">About</a>
+            <a href="">Store</a>
+        </div>
+
+        <div class="nav-div">
+            <a href="">Gmail</a>
+            <a href="">Images</a>
+        </div>
     </nav>
 
-    <div>
+    <div id="search-container">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The Google Logo" id="logo-img">
         
-        <input type="text" id="search-field">
+        <form>
+            <input type="text" id="search-field">
+
+            <div id="buttons-div">
+                <input type="button" value="Google Search" class="search-button">
+                <input type="button" value="I'm Feeling Lucky" class="search-button">
+            </div>
+        </form>
     </div>
 
     <footer>
